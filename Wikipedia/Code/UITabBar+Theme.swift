@@ -1,7 +1,7 @@
 import WMF
 import UIKit
 
-extension UITabBar: @retroactive Themeable {
+extension UITabBar: Themeable {
     public func apply(theme: Theme) {
         isTranslucent = false
         let appearance = UITabBarAppearance.appearanceForTheme(theme)

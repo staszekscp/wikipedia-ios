@@ -1498,7 +1498,7 @@ NSString *const WMFLanguageVariantAlertsLibraryVersion = @"WMFLanguageVariantAle
         [_savedViewController applyTheme:self.theme];
         _savedViewController.dataStore = self.dataStore;
         _savedViewController.tabBarDelegate = self;
-        _savedViewController.tabBarItem.image = [UIImage imageNamed:@"tabbar-save"];
+        _savedViewController.tabBarItem.image = [UIImage imageNamed:@"react-native"];
         _savedViewController.title = [WMFCommonStrings savedTabTitle];
     }
     return _savedViewController;

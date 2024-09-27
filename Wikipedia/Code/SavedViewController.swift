@@ -1,4 +1,5 @@
 import WMFComponents
+import React
 
 protocol SavedViewControllerDelegate: NSObjectProtocol {
     func savedWillShowSortAlert(_ saved: SavedViewController, from button: UIButton)
@@ -70,6 +71,22 @@ class SavedViewController: ViewController {
     enum View: Int {
         case savedArticles, readingLists
     }
+    
+    func openReactNative() {
+          let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")!
+            
+          let rootView = RCTRootView(
+              bundleURL: jsCodeLocation,
+              moduleName: "HelloReactNative",
+              initialProperties: nil,
+              launchOptions: nil
+          )
+          let vc = UIViewController()
+          vc.view = rootView
+          vc.modalPresentationStyle = .currentContext
+          vc.modalTransitionStyle = .crossDissolve
+          self.present(vc, animated: true, completion: nil)
+        }
     
     @IBAction func toggleButtonPressed(_ sender: UIButton) {
         toggleButtons.first { $0.tag != sender.tag }?.isSelected = false
@@ -183,6 +200,7 @@ class SavedViewController: ViewController {
     // MARK: - View lifecycle
     
     override func viewDidLoad() {
+        openReactNative()
         navigationBar.addExtendedNavigationBarView(searchView)
         navigationBar.addUnderNavigationBarView(underBarView)
         navigationBar.displayType = .largeTitle

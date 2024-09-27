@@ -6,6 +6,8 @@
 
 # Xcode/ObjC ignores, copied from https://github.com/github/gitignore/blob/master/Objective-C.gitignore
 /build/
+/Pods/
+.xcode.env.local
 *.bcsymbolmap
 *.version
 Carthage/Checkouts

@@ -15,7 +15,7 @@ class MockAppDelegate: UIResponder, UIApplicationDelegate {
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+    var window: UIWindow?
     private static let backgroundFetchInterval = TimeInterval(10800) // 3 Hours
     private static let backgroundAppRefreshTaskIdentifier = "org.wikimedia.wikipedia.appRefresh"
     private static let backgroundDatabaseHousekeeperTaskIdentifier = "org.wikimedia.wikipedia.databaseHousekeeper"
