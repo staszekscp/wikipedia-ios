@@ -12,6 +12,8 @@ Carthage/Checkouts
 Carthage/Build/watchOS/
 Carthage/Build/Mac/
 Carthage/Build/tvOS/
+Pods/
+.xcode.env.local
 
 Carthage Cache
 *.pbxuser

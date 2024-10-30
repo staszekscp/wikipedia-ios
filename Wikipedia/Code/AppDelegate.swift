@@ -1,6 +1,8 @@
 import UIKit
 import BackgroundTasks
 import CocoaLumberjackSwift
+import React_RCTAppDelegate
+import React
 
 #if TEST
 // Avoids loading needless dependencies during unit tests
@@ -14,7 +16,7 @@ class MockAppDelegate: UIResponder, UIApplicationDelegate {
 #else
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: RCTAppDelegate {
     
     private static let backgroundFetchInterval = TimeInterval(10800) // 3 Hours
     private static let backgroundAppRefreshTaskIdentifier = "org.wikimedia.wikipedia.appRefresh"
@@ -23,7 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // TODO: Refactor background task refresh and notification token registration logic out of WMFAppViewController. Then we can then move tab bar instantiation into SceneDelegate.
     let appViewController = WMFAppViewController()
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        self.automaticallyLoadReactNativeWindow = false
+        super.application(application, didFinishLaunchingWithOptions: launchOptions)
         
         registerUserDefaults()
         
@@ -40,19 +44,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func applicationWillTerminate(_ application: UIApplication) {
+    override func applicationWillTerminate(_ application: UIApplication) {
         updateDynamicIconShortcutItems()
     }
 
     // MARK: UISceneSession Lifecycle
 
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+    override func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-
+    
+    override func sourceURL(for bridge: RCTBridge) -> URL? {
+        self.bundleURL()
     }
+    
+    override func bundleURL() -> URL? {
+        #if DEBUG
+            RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index")
+        #else
+            Bundle.main.url(forResource: "main", withExtension: "jsbundle")
+        #endif
+    }
+    
     
     // MARK: Public
     
@@ -86,11 +99,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Notifications
     
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
+    override func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error) {
+        super.application(application, didFailToRegisterForRemoteNotificationsWithError: error)
         DDLogError("Remote notification registration failure: \(error.localizedDescription)")
     }
     
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    override func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         appViewController.setRemoteNotificationRegistrationStatusWithDeviceToken(deviceToken, error: nil)
     }
 

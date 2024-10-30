@@ -1,4 +1,5 @@
 import WMFComponents
+import React_RCTAppDelegate
 
 protocol SavedViewControllerDelegate: NSObjectProtocol {
     func savedWillShowSortAlert(_ saved: SavedViewController, from button: UIButton)
@@ -180,9 +181,16 @@ class SavedViewController: ViewController {
         }
     }
     
+    private func openReactNative() {
+        let factory = (UIApplication.shared.delegate as! RCTAppDelegate).rootViewFactory
+        self.view = factory.view(withModuleName: "HelloBrownfield")
+    }
+    
     // MARK: - View lifecycle
     
     override func viewDidLoad() {
+        openReactNative()
+
         navigationBar.addExtendedNavigationBarView(searchView)
         navigationBar.addUnderNavigationBarView(underBarView)
         navigationBar.displayType = .largeTitle

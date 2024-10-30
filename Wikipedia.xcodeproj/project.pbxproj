@@ -1651,6 +1651,7 @@
 		83FDE79A293564AC006D55FE /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FDE798293564AC006D55FE /* Link.swift */; };
 		83FDE79B293564AC006D55FE /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FDE798293564AC006D55FE /* Link.swift */; };
 		982800D624D302BF004B1850 /* EventPlatformClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982800D524D302BF004B1850 /* EventPlatformClient.swift */; };
+		9E35EDCDB4CAF888B19F63DE /* libPods-Wikipedia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFA95FD8367345A6E70F755 /* libPods-Wikipedia.a */; };
 		A452F9F824081A5500D8ED09 /* MockCLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452F9F624081A5500D8ED09 /* MockCLLocationManager.swift */; };
 		A452F9F924081A5500D8ED09 /* MockCLHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452F9F724081A5500D8ED09 /* MockCLHeading.swift */; };
 		A452F9FB24081A7200D8ED09 /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452F9FA24081A7200D8ED09 /* LocationManagerTests.swift */; };
@@ -2294,7 +2295,7 @@
 		D8CE25211E698E2400DAE2E0 /* UIView+WMFSnapshotting.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E803901C0CDABE0065EBC0 /* UIView+WMFSnapshotting.m */; };
 		D8CE25221E698E2400DAE2E0 /* UIViewController+WMFStoryboardUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E803E51C0CDD450065EBC0 /* UIViewController+WMFStoryboardUtilities.m */; };
 		D8CE25231E698E2400DAE2E0 /* UIVIewController+WMFCommonRotationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2E9F91CB2B3B300D1C844 /* UIVIewController+WMFCommonRotationSupport.swift */; };
-		D8CE25241E698E2400DAE2E0 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D8CE25241E698E2400DAE2E0 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		D8CE25271E698E2400DAE2E0 /* WMFChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6BE561E4526A40033BD6E /* WMFChangePasswordViewController.swift */; };
 		D8CE252E1E698E2400DAE2E0 /* WMFArticleRevisionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BC23E4DC1C223DCB00B5AFDE /* WMFArticleRevisionFetcher.m */; };
 		D8CE252F1E698E2400DAE2E0 /* WMFArticleLanguagesSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B4CF091CC0500E0051DF7A /* WMFArticleLanguagesSectionHeader.m */; };
@@ -2508,7 +2509,7 @@
 		D8EC3E181E9BDA35006712EB /* UIView+WMFSnapshotting.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E803901C0CDABE0065EBC0 /* UIView+WMFSnapshotting.m */; };
 		D8EC3E191E9BDA35006712EB /* UIViewController+WMFStoryboardUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E803E51C0CDD450065EBC0 /* UIViewController+WMFStoryboardUtilities.m */; };
 		D8EC3E1A1E9BDA35006712EB /* UIVIewController+WMFCommonRotationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED2E9F91CB2B3B300D1C844 /* UIVIewController+WMFCommonRotationSupport.swift */; };
-		D8EC3E1B1E9BDA35006712EB /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D8EC3E1B1E9BDA35006712EB /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		D8EC3E1E1E9BDA35006712EB /* WMFChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6BE561E4526A40033BD6E /* WMFChangePasswordViewController.swift */; };
 		D8EC3E251E9BDA35006712EB /* WMFArticleRevisionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BC23E4DC1C223DCB00B5AFDE /* WMFArticleRevisionFetcher.m */; };
 		D8EC3E261E9BDA35006712EB /* WMFArticleLanguagesSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B4CF091CC0500E0051DF7A /* WMFArticleLanguagesSectionHeader.m */; };
@@ -3269,15 +3270,19 @@
 		0EF8634F1C19E4F100006D2D /* WMFEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMFEmptyView.h; path = Wikipedia/Code/WMFEmptyView.h; sourceTree = SOURCE_ROOT; };
 		0EF863501C19E4F100006D2D /* WMFEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMFEmptyView.m; path = Wikipedia/Code/WMFEmptyView.m; sourceTree = SOURCE_ROOT; };
 		19A172FA6AE61E76FCEF4259 /* NSUserActivity+WMFExtensionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserActivity+WMFExtensionsTest.m"; sourceTree = "<group>"; };
+		33778C7FF5F649168FDD62DF /* Pods-Wikipedia.stagingdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.stagingdebug.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.stagingdebug.xcconfig"; sourceTree = "<group>"; };
 		41CCB67321CC1F9700206B47 /* SavedArticlesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedArticlesCollectionViewController.swift; sourceTree = "<group>"; };
 		41FCAA3521C844CB001D8411 /* ReadingListEntryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListEntryCollectionViewController.swift; sourceTree = "<group>"; };
+		4AB50176D4EA9F85EAC04FD7 /* Pods-Wikipedia.experimental.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.experimental.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.experimental.xcconfig"; sourceTree = "<group>"; };
 		533AB8AD259792A9003A43D9 /* wikipedia-language-variants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wikipedia-language-variants.json"; sourceTree = "<group>"; };
 		53478DE425AF8CB900F31DC2 /* Wikipedia 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Wikipedia 5.xcdatamodel"; sourceTree = "<group>"; };
 		535F16D525CE11A300875AAD /* MWKDataStore+LanguageVariantMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MWKDataStore+LanguageVariantMigration.swift"; sourceTree = "<group>"; };
 		53A575F92602C845009835E6 /* WMFAppViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WMFAppViewController+Extensions.swift"; sourceTree = "<group>"; };
 		53BAB79925DDDEE100A5ED4E /* Wikipedia 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Wikipedia 6.xcdatamodel"; sourceTree = "<group>"; };
 		5F5E96E42C57E4D6006FDE95 /* WMFMissingAltTextLink+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WMFMissingAltTextLink+Extensions.swift"; sourceTree = "<group>"; };
+		5FBCACE1520F8004F1DBF2CA /* Pods-Wikipedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.release.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.release.xcconfig"; sourceTree = "<group>"; };
 		5FF60E722C59376900306D6E /* WMFMissingAltTextLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMFMissingAltTextLinkTests.swift; sourceTree = "<group>"; };
+		66FA6464A9ED646D3EB28E4F /* Pods-Wikipedia.experimentaldebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.experimentaldebug.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.experimentaldebug.xcconfig"; sourceTree = "<group>"; };
 		67033E132A61B24800896852 /* WatchlistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistController.swift; sourceTree = "<group>"; };
 		67033E182A61DC3700896852 /* ArticleViewController+Watchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleViewController+Watchlist.swift"; sourceTree = "<group>"; };
 		67059DB42260D034009811AA /* SchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeHandler.swift; sourceTree = "<group>"; };
@@ -3859,7 +3864,12 @@
 		83FBE9741F6181E00026C7EB /* ShareAFactActivityImageItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAFactActivityImageItemProvider.swift; sourceTree = "<group>"; };
 		83FD0A5B29913A4D00D459A8 /* Wikipedia 7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Wikipedia 7.xcdatamodel"; sourceTree = "<group>"; };
 		83FDE798293564AC006D55FE /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		8B86A95F57872679572362CC /* Pods-Wikipedia.localdebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.localdebug.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.localdebug.xcconfig"; sourceTree = "<group>"; };
+		8F26BABF71C2D3597EE5DC1D /* Pods-Wikipedia.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.staging.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.staging.xcconfig"; sourceTree = "<group>"; };
 		982800D524D302BF004B1850 /* EventPlatformClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlatformClient.swift; sourceTree = "<group>"; };
+		9A1CBA6BB7EB04066F013A8F /* Pods-Wikipedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.debug.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.debug.xcconfig"; sourceTree = "<group>"; };
+		9FFA95FD8367345A6E70F755 /* libPods-Wikipedia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wikipedia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A133A9D6DB377CF9A7B4CA48 /* Pods-Wikipedia.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.test.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.test.xcconfig"; sourceTree = "<group>"; };
 		A452F9F624081A5500D8ED09 /* MockCLLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCLLocationManager.swift; sourceTree = "<group>"; };
 		A452F9F724081A5500D8ED09 /* MockCLHeading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCLHeading.swift; sourceTree = "<group>"; };
 		A452F9FA24081A7200D8ED09 /* LocationManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
@@ -4217,6 +4227,7 @@
 		B39427411E71F79700D3146D /* NSDictionaryBlocksKitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryBlocksKitTest.m; sourceTree = "<group>"; };
 		B39427421E71F79700D3146D /* NSSetBlocksKitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetBlocksKitTest.m; sourceTree = "<group>"; };
 		B3F21D0E1EB0EBB4000ED0BB /* PlaceSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceSearchService.swift; sourceTree = "<group>"; };
+		B948788B653DA4047B170A6B /* Pods-Wikipedia.uitests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wikipedia.uitests.xcconfig"; path = "Target Support Files/Pods-Wikipedia/Pods-Wikipedia.uitests.xcconfig"; sourceTree = "<group>"; };
 		BA4524161F324C3100439C42 /* FontSizeSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizeSliderViewController.swift; sourceTree = "<group>"; };
 		BA4524171F324C3100439C42 /* FontSizeSliderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FontSizeSliderViewController.xib; sourceTree = "<group>"; };
 		BA4524221F32500C00439C42 /* TextSizeChangeExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSizeChangeExampleViewController.swift; sourceTree = "<group>"; };
@@ -4858,6 +4869,7 @@
 				D499143D181D51DE00E6073C /* UIKit.framework in Frameworks */,
 				D4991439181D51DE00E6073C /* Foundation.framework in Frameworks */,
 				041EFC371996A1F800B2CB28 /* MapKit.framework in Frameworks */,
+				9E35EDCDB4CAF888B19F63DE /* libPods-Wikipedia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6431,6 +6443,7 @@
 		679603972C5D48CC009606C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FFA95FD8367345A6E70F755 /* libPods-Wikipedia.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -6657,6 +6670,22 @@
 				7004A5B9268CEE680029C46B /* EventPlatformClientWorker.swift */,
 			);
 			path = "Event Platform";
+			sourceTree = "<group>";
+		};
+		732C48CD86FD0096A5D59E87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A1CBA6BB7EB04066F013A8F /* Pods-Wikipedia.debug.xcconfig */,
+				8B86A95F57872679572362CC /* Pods-Wikipedia.localdebug.xcconfig */,
+				33778C7FF5F649168FDD62DF /* Pods-Wikipedia.stagingdebug.xcconfig */,
+				66FA6464A9ED646D3EB28E4F /* Pods-Wikipedia.experimentaldebug.xcconfig */,
+				5FBCACE1520F8004F1DBF2CA /* Pods-Wikipedia.release.xcconfig */,
+				8F26BABF71C2D3597EE5DC1D /* Pods-Wikipedia.staging.xcconfig */,
+				A133A9D6DB377CF9A7B4CA48 /* Pods-Wikipedia.test.xcconfig */,
+				B948788B653DA4047B170A6B /* Pods-Wikipedia.uitests.xcconfig */,
+				4AB50176D4EA9F85EAC04FD7 /* Pods-Wikipedia.experimental.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		7A03130021542F120095C953 /* Operations */ = {
@@ -7987,6 +8016,7 @@
 				67623E0D2AFD2897007488C7 /* WikipediaUITests */,
 				D4991436181D51DE00E6073C /* Products */,
 				679603972C5D48CC009606C4 /* Frameworks */,
+				732C48CD86FD0096A5D59E87 /* Pods */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -8978,12 +9008,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D499146A181D51DF00E6073C /* Build configuration list for PBXNativeTarget "Wikipedia" */;
 			buildPhases = (
+				3B40C6B96C21A685DB8B7F46 /* [CP] Check Pods Manifest.lock */,
 				00966EAA284033ED006C6E27 /* SwiftLint */,
 				D4991431181D51DE00E6073C /* Sources */,
 				D4991432181D51DE00E6073C /* Frameworks */,
 				D4991433181D51DE00E6073C /* Resources */,
 				0E8380771D64989F0076EDE4 /* Embed Foundation Extensions */,
 				D84581101D67572D00B09640 /* Embed Frameworks */,
+				B973202AF9F621142410B5C5 /* [CP] Embed Pods Frameworks */,
+				322AD364B62439CD89E9A597 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -8995,8 +9028,6 @@
 				676C864A26D40AEB00A704C1 /* PBXTargetDependency */,
 			);
 			name = Wikipedia;
-			packageProductDependencies = (
-			);
 			productName = "Wikipedia-iOS";
 			productReference = D4991435181D51DE00E6073C /* Wikipedia.app */;
 			productType = "com.apple.product-type.application";
@@ -9070,8 +9101,6 @@
 			dependencies = (
 			);
 			name = languages;
-			packageProductDependencies = (
-			);
 			productName = "codemirror-config";
 			productReference = D8B589A521CD05070027083A /* languages */;
 			productType = "com.apple.product-type.tool";
@@ -9095,8 +9124,6 @@
 				676C867526D4170100A704C1 /* PBXTargetDependency */,
 			);
 			name = Experimental;
-			packageProductDependencies = (
-			);
 			productName = "Wikipedia-iOS";
 			productReference = D8CE26AF1E698E2400DAE2E0 /* Experimental.app */;
 			productType = "com.apple.product-type.application";
@@ -9120,8 +9147,6 @@
 				676C867226D416FB00A704C1 /* PBXTargetDependency */,
 			);
 			name = Staging;
-			packageProductDependencies = (
-			);
 			productName = "Wikipedia-iOS";
 			productReference = D8EC3FB41E9BDA35006712EB /* Staging.app */;
 			productType = "com.apple.product-type.application";
@@ -9857,6 +9882,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n\tswiftlint --fix --config \".swiftlint-autocorrect.yml\" && swiftlint\nelse\n\techo \"warning: SwiftLint not installed, run \\\"scripts/brew_install\\\" script to install\"\nfi\n";
+		};
+		322AD364B62439CD89E9A597 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wikipedia/Pods-Wikipedia-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wikipedia/Pods-Wikipedia-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wikipedia/Pods-Wikipedia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B40C6B96C21A685DB8B7F46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wikipedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B973202AF9F621142410B5C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wikipedia/Pods-Wikipedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wikipedia/Pods-Wikipedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wikipedia/Pods-Wikipedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		D87021721EBA69B7000D02D6 /* Update Localizations */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -11185,7 +11266,7 @@
 				D8CE25231E698E2400DAE2E0 /* UIVIewController+WMFCommonRotationSupport.swift in Sources */,
 				00E75B6427EB87DC00A45B78 /* NotificationsCenterDetailView.swift in Sources */,
 				0072992128AC4D5300DCD2E6 /* TalkPageCellReplyDepthIndicator.swift in Sources */,
-				D8CE25241E698E2400DAE2E0 /* (null) in Sources */,
+				D8CE25241E698E2400DAE2E0 /* BuildFile in Sources */,
 				D818D3821ED7254D0076110D /* ColumnarCollectionViewController.swift in Sources */,
 				67B64D5E2507E9FD00FA27F3 /* ArticleAsLivingDocSmallEventCollectionViewCell.swift in Sources */,
 				B0524B66214854E900D8FD8D /* DescriptionWelcomeImageViewController.swift in Sources */,
@@ -11772,7 +11853,7 @@
 				D8EC3E1A1E9BDA35006712EB /* UIVIewController+WMFCommonRotationSupport.swift in Sources */,
 				83E776A520FFA4D700E26A47 /* DetailTransition.swift in Sources */,
 				6771299524FF775E00E89CA5 /* ArticleAsLivingDocLargeEventCollectionViewCell.swift in Sources */,
-				D8EC3E1B1E9BDA35006712EB /* (null) in Sources */,
+				D8EC3E1B1E9BDA35006712EB /* BuildFile in Sources */,
 				B0C7A0851F710EB1008415E7 /* WMFWelcomeAnalyticsAnimationBackgroundView.swift in Sources */,
 				67DB49BF2BD1CED9006E64CE /* ImageRecommendationsFunnel.swift in Sources */,
 				8356115E28D4FCEC00E95E6E /* NSMutableAttributedString+RemoveNewLine.swift in Sources */,
@@ -13034,7 +13115,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -13088,13 +13169,19 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DNDEBUG -DTEST";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia;
 			};
@@ -13102,6 +13189,7 @@
 		};
 		0EAB7A211D47AF8000E7CF8E /* Test */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A133A9D6DB377CF9A7B4CA48 /* Pods-Wikipedia.test.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -13179,7 +13267,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -13233,13 +13321,19 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DNDEBUG -DUITEST";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia;
 			};
@@ -13247,6 +13341,7 @@
 		};
 		675BC8BD2AFD2BD200771C4B /* UITests */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B948788B653DA4047B170A6B /* Pods-Wikipedia.uitests.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -14279,7 +14374,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -14333,13 +14428,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia;
 			};
@@ -14350,7 +14452,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -14399,7 +14501,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DNDEBUG";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -14407,6 +14514,7 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia;
@@ -14415,6 +14523,7 @@
 		};
 		D499146B181D51DF00E6073C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1CBA6BB7EB04066F013A8F /* Pods-Wikipedia.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -14446,6 +14555,7 @@
 		};
 		D499146C181D51DF00E6073C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FBCACE1520F8004F1DBF2CA /* Pods-Wikipedia.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -14754,7 +14864,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -14808,13 +14918,19 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DDEBUG -DWMF_LOCAL";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia;
 			};
@@ -14822,6 +14938,7 @@
 		};
 		D85432332188CC1300E895B5 /* LocalDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B86A95F57872679572362CC /* Pods-Wikipedia.localdebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -15074,7 +15191,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -15123,7 +15240,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DNDEBUG -DWMF_EXPERIMENTAL";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -15131,6 +15253,7 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia.alpha;
@@ -15139,6 +15262,7 @@
 		};
 		D858A7FB1DA6DBC8009C3DEB /* Experimental */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB50176D4EA9F85EAC04FD7 /* Pods-Wikipedia.experimental.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -15292,7 +15416,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -15346,13 +15470,19 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DDEBUG -DWMF_EXPERIMENTAL";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia.alpha;
 			};
@@ -15360,6 +15490,7 @@
 		};
 		D858A8031DA6DD00009C3DEB /* ExperimentalDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FA6464A9ED646D3EB28E4F /* Pods-Wikipedia.experimentaldebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -15671,7 +15802,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -15720,7 +15851,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DNDEBUG -DWMF_STAGING";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -15728,6 +15864,7 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia.beta;
@@ -15736,6 +15873,7 @@
 		};
 		D8A42A3E1E814FAA00D8E281 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F26BABF71C2D3597EE5DC1D /* Pods-Wikipedia.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -15912,7 +16050,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -15966,13 +16104,19 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				OTHER_SWIFT_FLAGS = "-DDEBUG -DWMF_STAGING";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HERMES = true;
 				VERSIONING_SYSTEM = "apple-generic";
 				WMF_APP_GROUP_IDENTIFIER = group.org.wikimedia.wikipedia.beta;
 			};
@@ -15980,6 +16124,7 @@
 		};
 		D8A42A461E814FE000D8E281 /* StagingDebug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33778C7FF5F649168FDD62DF /* Pods-Wikipedia.stagingdebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
